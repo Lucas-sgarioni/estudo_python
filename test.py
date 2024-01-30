@@ -1,3 +1,3 @@
-bfdaibvaslbvcaskunbvlaiewn
+var = "Variavel da MAIN"
 
-asdsa
+num= 987
