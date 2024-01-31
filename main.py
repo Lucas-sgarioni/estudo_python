@@ -1,11 +1,13 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 
-data_now = datetime.now()
-print(data_now.timestamp())
+valor_total = float(input('Digite o valor do empréstimo: R$ '))
+delta_tempo = int(input('Digite em quantos meses irá quitar o empréstimo: '))
+quantidade_parcelas = 1
 
-print(datetime.fromtimestamp(data_now.timestamp()))
+vencimento = datetime.now()
 
-fmt = '%d/%m/%Y %H:%M:%S'
-data_inicio = datetime.strptime('04/06/1990 19:00:00', fmt)
-data_atual = datetime.strptime('30/01/2024 10:41:00', fmt)
-print(data_atual - data_inicio)
+while quantidade_parcelas <= delta_tempo:
+    vencimento += relativedelta(months=+1)
+    print(f'Parcela: {quantidade_parcelas} = Valor R$ {valor_total / delta_tempo:,.2f} com vencimento {vencimento.strftime('%d/%m/%Y')}.')
+    quantidade_parcelas += 1
