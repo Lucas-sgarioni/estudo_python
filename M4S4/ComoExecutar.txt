@@ -1,0 +1,20 @@
+Instalar pytest:
+    pip install pytest
+
+Importar a biblioteca para ter acesso à métodos de meus_testes:
+    import pytest
+
+Como rodar um código Python ou Pytest:
+    Rodar Python:
+        python3.10.exe meus_testes.py
+    Rodar Pytest:
+        pytest.exe meus_testes.py       #Executa apenas o arquivo selecionado
+        pytest -v meus_testes.py        #Executa apenas o arquivo selecionado com feedback INDIVIDUAL de testes
+        pytest -v                       #Executa TODOS os arquivos que começam com "test_" ou que terminam com "_test" na pasta atual.
+        pytest -k mult -v               #Executa TODOS os testes que contenham a substring "mult" no diretório atual.
+        pytest -s meus_testes.py        #Executa apenas o arquivo selecionado, apresentando os PRINTs do código (stdout).
+
+Dica 1:
+    O pytest reconhece os arquivos com nomes que começam com "test_" ou que terminam com "_test".
+    Logo, é possível executar todos os testes apenas executando "pytest" no terminal, sem selecionar os arquivos.
+    Referência: https://www.tutorialspoint.com/pytest/pytest_quick_guide.htm

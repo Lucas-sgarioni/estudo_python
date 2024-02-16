@@ -1,5 +1,7 @@
 # estudo_python
 
-Hello, Sherlon!
+Curso Ultima Scholl
 
-Este é a Branch nova, nao do main
+Algumas atividades realizadas entre agosto/2023 e ...
+
+Pytest
