@@ -76,7 +76,7 @@
           <strong class="d-inline-block mb-2 text-primary">Camiseta</strong>
           <h3 class="mb-0">Camisa Básica</h3>
           <p class="card-text mb-auto">Camiseta confort de algodão egípcio.</p>
-          <a id="botao" href="#" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</a>
+          <button id="botao" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</button>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img height="250" loading="lazy" src="/Atividade M4S2/imagem/gola_polo.jpg" width="300">
@@ -91,7 +91,7 @@
           <strong class="d-inline-block mb-2 text-primary">Bermudas</strong>
           <h3 class="mb-0">Bermuda de Tactel</h3>
           <p class="card-text mb-auto">Bermuda de Tactel para prática de exercícios físicos. Leve e Confortável!</p>
-          <a id="botao" href="#" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</a>
+          <button id="botao" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</button>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img height="250" loading="lazy" src="/Atividade M4S2/imagem/short_tctel.jpg" width="300">
@@ -106,7 +106,7 @@
           <strong class="d-inline-block mb-2 text-primary">Calçados</strong>
           <h3 class="mb-0">Sapatos Sociais</h3>
           <p class="card-text mb-auto">Sapato Loafer em Couro San Diego.</p>
-          <a id="botao" href="#" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</a>
+          <button id="botao" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</button>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img height="250" loading="lazy" src="/Atividade M4S2/imagem/mexic-pointy-boots_fran.jpg" width="300">
@@ -121,7 +121,7 @@
           <strong class="d-inline-block mb-2 text-primary">Acessórios</strong>
           <h3 class="mb-0">Óculos de sol</h3>
           <p class="card-text mb-auto">Óculos de sol quadrado hexagonal em metal com ponte pontilhada.</p>
-          <a id="botao" href="#" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</a>
+          <button id="botao" class="btn btn-sm" title="Nome do Produto">adicionar no carrinho</button>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img height="250" loading="lazy" src="/Atividade M4S2/imagem/Ray-Ban-Hexagonal-RB-3548-NL-001-51-1000x1000.jpg" width="300">
@@ -132,9 +132,11 @@
 </main>
 <script src="/Atividade M4S2/bootstrap.bundle.min.js"></script>
 <script>
-  function clickDocumento(evento) {
-    alert("Sem estoque")
-    document.addEventListener(alert)
+  let botao = document.getElementById('botao')
+  document.addEventListener('click', clickDocumento)
+  function clickDocumento(botao) {
+    alert("Este produto encontra-se sem estoque!")
+    return
   }
 </script>
 
